@@ -20,3 +20,6 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+/local
+data/raw/data.pkl
+data/preprocessed/data.pkl
