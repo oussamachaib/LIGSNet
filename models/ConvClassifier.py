@@ -6,6 +6,9 @@ from torch import nn
 class CNN(nn.Module):
     def __init__(self):
         super().__init__()
+        torch.set_default_dtype(torch.float32)  # default dtype
+        torch.set_float32_matmul_precision('high')  # precision
+
         # Backbone
         self.cnn = nn.Sequential(
             nn.Conv1d(in_channels=1, out_channels=12, kernel_size=19, stride=3),

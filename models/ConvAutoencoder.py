@@ -1,11 +1,15 @@
 import torch
 from torch import nn
 
+#%% Settings
+
 #%% Convolutional autoencoder
 
 class ConvAutoencoder(nn.Module):
     def __init__(self):
         super().__init__()
+        torch.set_default_dtype(torch.float32)  # default dtype
+        torch.set_float32_matmul_precision('high')  # precision
 
         # Encoder
         self.encoder = nn.Sequential(
