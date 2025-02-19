@@ -69,7 +69,7 @@ class ConvAutoencoder(nn.Module):
         return decoded
 
     def load_pretrained(selfs):
-        return torch.load('checkpoints/ConvAutoencoder.pth')
+        return torch.load('models/checkpoints/ConvAutoencoder.pth')
 
 #%% Loading the pretrained model
 
