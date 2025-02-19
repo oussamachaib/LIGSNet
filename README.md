@@ -35,6 +35,8 @@ By leveraging the encoder pretrained unsupervised, and augmentation of the origi
 </p>
 
 ## Navigating the repository
+At the moment, some of the data folders are saved locally. They will be uploaded to the repo in due course.
+```python3
 .
 ├── data
 │   ├── raw
@@ -45,21 +47,21 @@ By leveraging the encoder pretrained unsupervised, and augmentation of the origi
 │   │   └── data.pkl (reconstructed signals)
 │   ├── pseudomixture
 │   │   └── data.pkl (pseudomixture data)
-│   ├── splits
-│   │   └── *.pkl (wip)
+│   └── splits
+│       └── *.pkl (wip)
 ├── models
-│   ├── checkpoints (Pretrained models)
+│   ├── checkpoints (pretrained models)
 │   │   └── ConvClassifier.pth
 │   │   └── ConvAutoencoder.pth
-│   ├── ConvClassifier.py (Classifier class)
-│   ├── ConvAutoencoder.py (Autoencoder class)
+│   ├── ConvClassifier.py (classifier class)
+│   └── ConvAutoencoder.py (autoencoder class)
 ├── notebooks
-│   ├── Demo1.ipynb (Demonstration 1: classification)
-│   ├── Demo2.ipynb (Demonstration 2: manifold learning)
+│   ├── Demo1.ipynb (demonstration 1: classification)
+│   └── Demo2.ipynb (demonstration 2: manifold learning)
 ├── source
-├── loaders.py (Data loading)
-└── trainers.py (Model trainer classes)
-
+├── loaders.py (data loading)
+└── trainers.py (model trainer classes)
+```
 
 ## Citation
 
