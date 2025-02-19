@@ -4,9 +4,11 @@ A collection of neural networks for representation learning and classification o
 
 Two solutions were thus developed to address both shortcomings:
 * ```LIGSNetCAE```: A deep convolutional autoencoder trained to minimize the reconstruction error of LIGS time series. The convolutional backbone of the encoder-decoder blocks was designed via receptive fields reflecting LIGS-specific domain knowledge. A single-unit bottleneck is used to reconstruct the latent, physically-meaningful flamelet coordinate, which is inherently one-dimensional.
-* ```LIGSConvNet```: A deep, translation-invariant, convolutional neural network for binary classification. It solves the long-standing problem of predicting correct harmonic constants ($n_h \in {1,2}$) which plagues the analysis of non-premixed flames. It leverages the pretrained encoder of ```LIGSNetCAE``.
+* ```LIGSConvNet```: A deep, translation-invariant, convolutional neural network for binary classification. It solves the long-standing problem of predicting correct harmonic constants ($n_h \in {1,2}$) which plagues the analysis of non-premixed flames. It leverages the pretrained encoder of ```LIGSNetCAE```.
 
 Both networks were trained in the PyTorch framework on a hydrogen-air LIGS data set acquired in a high-pressure gas turbine in the Gas Turbine Research Centre (Cardiff, Wales, UK) in 2023. Details on the setup and diagnostics can be found in [(Chaib et al. 2024)](https://doi.org/10.1115/1.4065996).
+
+**Note**: The repository is a work in progress. The notebooks illustrate how to get started with the pretrained models.
 
 ## Architectures
 ### LIGSNetCAE
@@ -32,7 +34,31 @@ By leveraging the encoder pretrained unsupervised, and augmentation of the origi
 <img src = "https://github.com/user-attachments/assets/d6901743-8d9c-4a61-b42c-6249f0e0d856" width = "900"/>
 </p>
 
-## Citation
+## Navigating the repository
+.
+├── data
+│   ├── raw
+│   │   └── data.pkl (raw data set -- upcoming)
+│   ├── preprocessed
+│   │   └── data.pkl (preprocessed data set -- upcoming)
+│   ├── reconstruction
+│   │   └── data.pkl (reconstructed signals)
+│   ├── pseudomixture
+│   │   └── data.pkl (pseudomixture data)
+│   ├── splits
+│   │   └── *.pkl (wip)
+├── models
+│   ├── checkpoints (Pretrained models)
+│   │   └── ConvClassifier.pth
+│   │   └── ConvAutoencoder.pth
+│   ├── ConvClassifier.py (Classifier class)
+│   ├── ConvAutoencoder.py (Autoencoder class)
+├── notebooks
+│   ├── Demo1.ipynb (Demonstration 1: classification)
+│   ├── Demo2.ipynb (Demonstration 2: manifold learning)
+├── source
+├── loaders.py (Data loading)
+└── trainers.py (Model trainer classes)
 
 
 ## Citation
