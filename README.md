@@ -6,4 +6,4 @@ Two solutions were thus developed to address both shortcomings:
 * ```LIGSNetCAE```: A deep convolutional autoencoder trained to minimize the reconstruction error of time series. The convolutional backbone of the encoder-decoder blocks was designed via receptive fields reflecting general LIGS domain knowledge. A single-unit bottleneck is used to reconstruct the latent flamelet coordinate.
 * ```LIGSConvNet```: A deep, translation-invariant, convolutional neural network for binary classification, leveraging the pretrained encoder of the CAE.
 
-Both networks were trained on a hydrogen-air LIGS data set acquired in a high-pressure gas turbine in the Gas Turbine Research Centre (Cardiff, Wales, UK) in 2023. Details on the setup and diagnostics can be found in [https://doi.org/10.1115/1.4065996](Chaib et al. 2024).
+Both networks were trained on a hydrogen-air LIGS data set acquired in a high-pressure gas turbine in the Gas Turbine Research Centre (Cardiff, Wales, UK) in 2023. Details on the setup and diagnostics can be found in [Chaib et al. 2024](https://doi.org/10.1115/1.4065996).
