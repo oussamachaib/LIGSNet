@@ -41,7 +41,7 @@ class CNN(nn.Module):
         return self.fc(self.cnn(X))
 
     def load_pretrained(self):
-        return torch.load('checkpoints/ConvClassifier.pth')
+        return torch.load('models/checkpoints/ConvClassifier.pth')
 
 #%% Loading the pretrained model
 
