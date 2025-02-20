@@ -72,7 +72,7 @@ Machine Learning for Combustion Meeting 2024 (London, UK)
     title   = {Feature learning from laser-induced grating spectroscopy of reacting flows},
     author  = {Chaib, Oussama and Weller, Lee, and Hochgreb Simone},
     year    = {2024},
-}
+              }
 ```
 
 ASME TurboExpo 24 (London, UK)
@@ -89,5 +89,5 @@ ASME TurboExpo 24 (London, UK)
     doi = {10.1115/1.4065996},
     url = {https://doi.org/10.1115/1.4065996},
     eprint = {https://asmedigitalcollection.asme.org/gasturbinespower/article-pdf/146/11/111020/7365958/gtp\_146\_11\_111020.pdf},
-}
+        }
 ```
