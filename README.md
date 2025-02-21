@@ -4,7 +4,7 @@
 
 The following two solutions address the computational shortcomings of LIGS:
 * ```LIGSConvAENet```: A deep convolutional autoencoder trained to minimize the reconstruction error of LIGS time series. The convolutional backbone of the encoder-decoder blocks was designed via receptive fields reflecting LIGS-specific domain knowledge. A single-unit bottleneck is used to reconstruct the latent, physically-meaningful flamelet coordinate, which is inherently one-dimensional.
-* ```LIGSConvNet```: A deep, translation-invariant, convolutional neural network for binary classification. It solves the long-standing problem of predicting correct harmonic constants ($n_h \in {1,2}$) which plagues the analysis of non-premixed flames. It leverages the pretrained encoder of ```LIGSConvAENet```.
+* ```LIGSConvNet```: A deep, translation-invariant, convolutional neural network for binary classification. It solves the long-standing problem of predicting correct harmonic constants ($n_h \in$ $\{1,2\}$) which plagues the analysis of non-premixed flames. It leverages the pretrained encoder of ```LIGSConvAENet```.
 
 Both networks were trained in the PyTorch framework on a hydrogen-air LIGS data set acquired in a high-pressure gas turbine @ the Gas Turbine Research Centre (Cardiff, Wales, UK) in 2023. Details on the setup and diagnostics can be found in [(Chaib et al. 2024)](https://doi.org/10.1115/1.4065996). The data set is in the form of $25{,}000$ observations (signals) of $6{,}000$ features (voltage measurements) each.
 
