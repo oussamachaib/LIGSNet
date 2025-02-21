@@ -25,7 +25,7 @@ The classifier is initialized with the encoder block of the previous autoencoder
 
 ## Model evaluation
 ### Embeddings
-The performance of ```LIGSConvAENet``` was validated against the embeddings obtained via ```tulip```, via Spearman and Pearson correlation coefficients. It is important to state the Spearman coefficient is the more reliable metric here, given the objective is to order the different observations along the latent trajectory in a consistent way. In other words, the relationship between embeddings learned via either ```LIGSConvAENet``` or ```tulip``` need not be linear, so long the ordinal ranking of individual observations is comparable.
+The performance of ```LIGSConvAENet``` was validated against the embeddings obtained via ```tulip```, via Spearman and Pearson correlation coefficients. It is important to state the Spearman coefficient is the more reliable metric here, given the objective is to order the different observations along the latent trajectory in a consistent way. In other words, the relationship between embeddings learned via either ```LIGSConvAENet``` or ```tulip``` need not be linear, so long the ordinal ranking of individual observations is comparable. This is depicted in the left panel down below. The right panel depicts the Pearson correlation coefficient between signals reconstructed via both approaches. The signals are depicted in the next section (titled "Preview").
 
 <p align = "center">
 <img src = "https://github.com/user-attachments/assets/4739023b-286e-49d2-84bd-32bbf7aef9b2" width = "600"/>
